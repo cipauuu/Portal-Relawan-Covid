@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Badan Nasional Penanggulangan Bencana</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo-square.svg">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light nav1">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/logo-square.svg" class="img-fluid" alt="Responsive image"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Alur Pendaftaran</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Modul Training</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tanya Jawab</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Bantuan</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 navbar-profile">
+                    <img class="img-fluid" src="img/logo-square.svg" alt="">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Bambang Baskoro
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Main -->
+    <div class="container">
+        <div class="container profile">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-4">
+                            <div class="text-center">
+                                <img src="img/logo-square.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-8 ses">
+                            <p class="nama">Bambang Baskoro</p>
+                            <p>Email : bambangbaskoro@gmail.com</p>
+                            <p>No. HP : 0812 3456 7890</p>
+                            <p>Domisili : Sleman, Yogyakarta</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="row ops">
+                        <div class="col-lg-4 col-md-4 col-4">
+                            <p>Opsi Relawan</p>
+                            <p class="sub"><b>Medis</b></p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-4">
+                            <p>Pilihan Relawan</p>
+                            <p class="sub"><b>Perawat</b></p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-4">
+                            <p>Kode Relawan</p>
+                            <p class="sub"><b>#YK0001</b></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-6">
+                            <button class="btn btnghost">Upload Photo</button>
+                            <small class="form-text text-muted">Maximal Photo 1MB</small>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-6">
+                            <button class="btn btnghost">Edit Profil Anda</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container sub-pro">
+            <p class="s"><b>Berikut lowongan relawan yang tersedia</b></p>
+            <p class="dt">*Setiap relawan hanya dapat mendaftar maksimal 3 (Tiga) Posisi.</p>
+            <p class="dt">*Jika relawan sudah menyelesaikan proses seleksi dan mendapatkan surat tugas, maka relawan tidak bisa mendaftar pada posisi lainnya.</p>
+        </div>
+
+        <div class="container sub-pro">
+            <div class="row">
+                <div class="col-6">
+                    <label class="my-1 mr-2">Show</label>
+                    <select class="custom-select select mr-2">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                    <label class="d-none d-lg-inline my-1 mr-2">Entries</label>
+                </div>
+                <div class="col-6 text-right">
+                    <div class="form-group row">
+                        <label class="d-none  d-md-inline col-md-5"></label>
+                        <div class="col-12 col-md-7">
+                            <input placeholder="Search" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-responsive my-4">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">No</th>
+                        <th scope="col" style="width: 10%">Job</th>
+                        <th scope="col" style="width: 8%">Lokasi</th>
+                        <th scope="col" style="width: 11%">Instansi</th>
+                        <th scope="col" style="width: 12%">Status</th>
+                        <th scope="col" style="width: 12%">Tanggal Dibuat</th>
+                        <th scope="col" style="width: 12%">Tanggal Submit</th>
+                        <th scope="col" style="width: 35%">Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Tenaga Ahli Laboratorium</td>
+                        <td>Yogyakarta</td>
+                        <td>RSUD, Samarinda</td>
+                        <td>
+                            <div class="status-open">Open</div>
+                        </td>
+                        <td>30 Desember 2020</td>
+                        <td>30 Desember 2020</td>
+                        <td>
+                            <button class="aksi-nonactive">Daftar</button>
+                            <button class="aksi-nonactive">Batalkan</button>
+                            <button class="aksi-nonactive">Dashboard</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>
+                            <div class="status-seleksi">Tahap Seleksi</div>
+                        </td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>
+                            <button class="aksi-daftar-normal" data-toggle="modal" data-target="#myModal">Daftar</button>
+                            <button class="aksi-batal-normal" data-toggle="modal" data-target="#myModal3">Batalkan</button>
+                            <button class="aksi-dashboard">Dashboard</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                        <td>
+                            <div class="status-selesai">Seleksi Selesai</div>
+                        </td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                        <td>
+                            <button class="aksi-daftar-active">Terdaftar</button>
+                            <button class="aksi-batal-active">Dibatalkan</button>
+                            <button class="aksi-dashboard">Dashboard</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="container">
+
+            <div class="row justify-content-end">
+                <div class="col-12"></div>
+                <nav aria-label="...">
+                    <ul class="pagination">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1">Previous</a>
+                        </li>
+                        <li class="page-item active">
+                            <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+    <!-- Main -->
+
+    <!-- Footer -->
+    <footer class="text-muted">
+        <div class="container nonhome">
+            <p class="float-right">
+                <a href="mailto:email@bnpb.go.id">email@bnpb.go.id</a>
+            </p>
+            <p>Copyrights © 2020 Badan Nasional Penanggulangan Bencana</p>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Modal Daftar -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <img src="img/tambah.svg" alt=""><br><br>
+                    <p><b>Apakah Anda ingin mendaftar sebagai relawan pada posisi</b><br><br>
+                        <b class="biru">Perawat</b> Lokasi di <b class="biru">Yogyakarta ?</b></p><br>
+                    <div class="row">
+                        <div class="col-6">
+                            <a href="#" data-dismiss="modal">Belum</a>
+                        </div>
+                        <div class="col-6 text-right">
+                            <button type="button" data-dismiss="modal" class="btn btndefault" data-toggle="modal" data-target="#myModal2">Daftar Sekarang</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Modal Daftar -->
+    
+    <!-- Modal Daftar -->
+    <div class="modal fade" id="myModal2" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <img src="img/centang.svg" alt=""><br><br>
+                    <p><b>Terimakasih! telah mendaftar sebagai Relawan</b><br><br>
+                        Data anda telah terdaftar di lowongan relawan <b class="biru">Perawat</b> Lokasi di <b class="biru">Yogyakarta</b></p><br>
+                    <button type="button" data-dismiss="modal" class="btn btnhijau">Ok</button>
+                    <div class="linegray"></div>
+                    <p class="bawah">Silahkan menunggu undangan dan proses seleksi dari Instansi terkait. Anda dapat mengakses dan tombol Dashboard akan berubah menjadi warna biru apabila Anda diterima sebagai relawan nantinya</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Modal Daftar -->
+    
+    <!-- Modal Daftar -->
+    <div class="modal fade" id="myModal3" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <img src="img/silang.svg" alt=""><br><br>
+                    <p><b>Apakah Anda yakin akan membatalkan lowongan relawan yang tersedia?</b><br><br>
+                        <b class="merah">Perhatian! Lowongan yang anda batalkan tidak dapat dikembalikan lagi.</b></p><br>
+                    <div class="row">
+                        <div class="col-6">
+                            <button type="button" data-dismiss="modal" class="btn btnmerah">Tidak</button>
+                        </div>
+                        <div class="col-6 text-right">
+                            <a href="#" data-dismiss="modal"><b class="merah">Ya, Tetap Batalkan</b></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Modal Daftar -->
+    
+    
+</body>
+
+</html>

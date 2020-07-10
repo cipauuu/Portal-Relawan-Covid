@@ -1,0 +1,408 @@
+    @extends('../layouts/general-layouts')
+
+    @section('content')
+
+
+    <!-- DATA PERSONAL PEMBUAT LOWONGAN -->
+    <div class="container main" id="instansi1">
+        <div class="line3">
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 konten">
+                <p class="title"><b>Data Personal Pembuat Lowongan</b></p>
+
+                <form method="POST" action="{{ url('/instansi/force-profile') }}">
+                    @csrf
+
+                    <div class="form-group">
+                        <label>Alamat Email *</label>
+                        <input name="email" placeholder="Email Pelapor" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>No. KTP *</label>
+                        <input name="ktp" placeholder="No. KTP" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Nama Lengkap *</label>
+                        <input name="nama_perwakilan" placeholder="Nama Lengkap" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Tempat Lahir *</label>
+                        <input name="tempat_lahir" placeholder="Tempat Lahir" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Tanggal Lahir *</label>
+                        <input name="birthday" placeholder="1 Januari 2000" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Jenis Kelamin *</label>
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="gridRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Laki-Laki
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="gridRadios2" value="option2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Perempuan
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>No. Handphone/WA *</label>
+                        <input name="phone" class="form-control">
+                        <small class="form-text text-muted">Pastikan no yang anda cantumkan merupakan no yang aktif pada Whatsapp.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Alamat Lengkap (Sesuai KTP) *</label>
+                        <input name="address" placeholder="Alamat Lengkap" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Domisili Saat Ini *</label>
+                        <input name="current_address" placeholder=" Saat Ini" class="form-control">
+                    </div>
+
+                    <a onclick="next1()" type="submit" class="btn btndefault mt-3">Selanjutnya</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- DATA PERSONAL PEMBUAT LOWONGAN -->
+
+    <!-- INFORMASI INSTASI PENERIMA RELAWAN -->
+    <div class="container main" id="instansi2">
+        <div class="line5">
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 konten">
+                <p class="title"><b>Informasi Instansi Penerima Relawan</b></p>
+
+                <form>
+                    <div class="form-group">
+                        <label for="inputState">Jenis Instansi *</label>
+                        <select id="inputState" class="form-control">
+                            <option selected>Gugas</option>
+                            <option>Kementrian</option>
+                            <option>BUMN</option>
+                            <option>RSUP</option>
+                            <option>Gusturah</option>
+                            <option>Dinas</option>
+                            <option>BUMD</option>
+                            <option>RSUD</option>
+                            <option>Pemerintah Desa/Kelurahan</option>
+                            <option>Lainnya</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Jenis Lowongan Tersedia (Apabila Memilih Opsi Lainnya)</label>
+                        <input placeholder="Jenis Lowongan Tersedia" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Nama Instansi *</label>
+                        <input name="nama_instansi" placeholder="Nama Instansi" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Alamat Instansi *</label>
+                        <input name="alamat_instansi" placeholder="Alamat Instansi" class="form-control">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="inputState">Provinsi *</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>Provinsi</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputState">Kabupaten/Kota *</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>Kabupaten</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputState">Kecamatan</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>Kecamatan</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="inputState">Kelurahan *</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>Kelurahan</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>RT/RW</label>
+                            <input placeholder="RT/RW" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Kode Pos</label>
+                            <input placeholder="Kode Pos" class="form-control">
+                        </div>
+                    </div>
+
+                    <a onclick="back2()" type="submit" class="btn btnghost mt-3">Kembali</a>
+                    <a onclick="next2()" type="submit" class="btn btndefault mt-3">Selanjutnya</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- INFORMASI INSTASI PENERIMA RELAWAN -->
+
+    <!-- PEMENUHAN HAK RELAWAN -->
+    <div class="container main" id="instansi3">
+        <div class="line5">
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 konten">
+                <p class="title"><b>Pemenuhan Hak Relawan</b></p>
+                <form>
+                    <div class="form-group">
+                        <label>Bersedia memberikan orintasi bidang dan lokasi kerja *</label>
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="confirm_orientation" id="gridRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Iya
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="confirm_orientation" id="gridRadios2" value="option2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Tidak
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Bersedia menyediakan fasiliatas dan atribut standart keselamatan kerja *</label>
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="confirm_facility" id="gridRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Iya
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="confirm_facility" id="gridRadios2" value="option2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Tidak
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Memberikan jaminan asuransi kecelakaan *</label>
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="confirm_insurance" id="gridRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Iya
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="confirm_insurance" id="gridRadios2" value="option2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Tidak
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <label class="my-3">Fasilitas yang akan diberikan ke Relawan (opsional) *</label>
+                    <div class="form-group pl-2">
+                        <label>1. Konsumsi selama bertugas</label>
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="confirm_food" id="gridRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Iya
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="confirm_food" id="gridRadios2" value="option2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Tidak
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group pl-2">
+                        <label>2. Biaya pengganti transport harian</label>
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="confirm_transport" id="gridRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Iya
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="confirm_transport" id="gridRadios2" value="option2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Tidak
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group pl-2">
+                        <label>3. Menyediakan Piagam Penghargaan/Surat Keterangan Kerja</label>
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="confirm_certificate" id="gridRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Iya
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="confirm_certificate" id="gridRadios2" value="option2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Tidak
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Menyetujui untuk menjalakan Protokol Kesehatan</label>
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="confirm_health_protocol" id="gridRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Iya
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="confirm_health_protocol" id="gridRadios2" value="option2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Tidak
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Bersedia memberikan surat tugas untuk relawan selama bertugas</label>
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="confirm_loa" id="gridRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Iya
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="confirm_loa" id="gridRadios2" value="option2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Tidak
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Mengalokasikan slot untuk relawan dengan disabilitas</label>
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="confirm_disability" id="gridRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Iya
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="confirm_disability" id="gridRadios2" value="option2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Tidak
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label ad" for="defaultCheck1">
+                            Dengan ini menyatakan bahwa kebutuhan relawan yang saya ajukan adalah benar.*
+                        </label>
+                    </div>
+
+                    <a onclick="back3()" type="submit" class="btn btnghost mt-3">Kembali</a>
+                    <a onclick="next3()" type="submit" class="btn btndefault mt-3">Selesai</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- PEMENUHAN HAK RELAWAN -->
+
+    @endsection
+
+    @push('scripts')
+
+
+    <script>
+        document.getElementById('instansi2').style.display = "none";
+        document.getElementById('instansi3').style.display = "none";
+
+        function next1() {
+            document.getElementById('instansi1').style.display = "none";
+            document.getElementById('instansi2').style.display = "block";
+        }
+
+        function next2() {
+            document.getElementById('instansi2').style.display = "none";
+            document.getElementById('instansi3').style.display = "block";
+        }
+
+        function back2() {
+            document.getElementById('instansi2').style.display = "none";
+            document.getElementById('instansi1').style.display = "block";
+        }
+
+        function back3() {
+            document.getElementById('instansi3').style.display = "none";
+            document.getElementById('instansi2').style.display = "block";
+        }
+    </script>
+    @endpush

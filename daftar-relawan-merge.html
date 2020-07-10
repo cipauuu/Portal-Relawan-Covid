@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Daftar Sebagai Relawan - Badan Nasional Penanggulangan Bencana</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo-square.svg">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light nav1">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/logo-square.svg" class="img-fluid" alt="Responsive image"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Alur Pendaftaran</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Modul Training</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tanya Jawab</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Bantuan</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 navbar-profile">
+                    <img class="img-fluid" src="img/logo-square.svg" alt="">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Bambang Baskoro
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Data Pribadi -->
+    <div class="container main" id="relawan1">
+        <div class="line2">
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 konten">
+                <p class="title text-center"><b>Daftar Sebagai Relawan</b></p>
+                <p>Gugus Tugas COVID-19 mengajak masyarakat seluruh Indonesia untuk bergotong royong dalam menghadapi masalah bangsa berkaitan penanganan COVID-19. Mari kita berkolaborasi dan berkontribusi untuk bangsa dan kemanusiaan menjadi relawan dalam tugas menangani pandemic COVID-19.</p>
+
+                <div class="container-red">
+                    <p>1. Bersedia untuk melakukan secara sukarela <br>
+                        2. Bersedia menerima pelatihan untuk menghadapi Pandemi COVID-19 <br>
+                        3. Bersedia bekerja dalam system shifting sesuai dengan standar Gugus Tugas COVID-19</p>
+                </div>
+
+                <form>
+                    <div class="form-group">
+                        <label>Alamat Email *</label>
+                        <input placeholder="Email Pelapor" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>No. KTP *</label>
+                        <input placeholder="No. KTP" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Nama Lengkap *</label>
+                        <input placeholder="Nama Lengkap" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Tempat Lahir *</label>
+                        <input placeholder="Tempat Lahir" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Tanggal Lahir *</label>
+                        <input placeholder="1 Januari 2000" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Jenis Kelamin *</label>
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Laki-Laki
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Perempuan
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>No. Handphone/WA *</label>
+                        <input class="form-control">
+                        <small class="form-text text-muted">Pastikan no yang anda cantumkan merupakan no yang aktif pada Whatsapp.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Alamat Lengkap (Sesuai KTP) *</label>
+                        <input class="form-control">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="inputState">Provinsi *</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>Provinsi</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputState">Kabupaten/Kota *</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>Kabupaten</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputState">Kecamatan</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>Kecamatan</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="inputState">Kelurahan *</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>Kelurahan</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>RT/RW</label>
+                            <input placeholder="RT/RW" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Kode Pos</label>
+                            <input placeholder="Kode Pos" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Domisili Saat Ini *</label>
+                        <input class="form-control">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="inputState">Provinsi *</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>Provinsi</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputState">Kabupaten/Kota *</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>Kabupaten</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputState">Kecamatan</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>Kecamatan</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="inputState">Kelurahan *</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>Kelurahan</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>RT/RW</label>
+                            <input placeholder="RT/RW" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Kode Pos</label>
+                            <input placeholder="Kode Pos" class="form-control">
+                        </div>
+                    </div>
+
+                    <a onclick="next1()" type="submit" class="btn btndefault mt-3">Selanjutnya</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Data Pribadi -->
+
+    <!-- Pendidikan -->
+    <div class="container main" id="relawan2">
+        <div class="line3">
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 konten">
+                <p class="title text-center"><b>Pendidikan</b></p>
+                <form>
+                    <div id="pendidikan1">
+                        <div class="form-group">
+                            <label for="inputState">Jenjang Pendidikan</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>SMA</option>
+                                <option>Strata 1</option>
+                                <option>Strata 2</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Nama Perguruan Tinggi/Lembaga Pendidikan *</label>
+                            <input class="form-control">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label>Nilai/IPK *</label>
+                                <input class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Lama Pendidikan *</label>
+                                <input class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Keahlian Khusus/Hobi (Jika Ada)</label>
+                            <input class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Penghargaan Terkait Keahlian Khusus (Jika Ada)</label>
+                            <input class="form-control">
+                        </div>
+
+                        <a id="tambahpendidikan" onclick="tambahpendidikan()" class="btn btn-block btnghost">+ Tambah Pendidikan</a>
+                    </div>
+
+                    <div id="pendidikan2">
+                        <div class="row-abu"></div>
+                        <div class="form-group">
+                            <label for="inputState">Jenjang Pendidikan</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>SMA</option>
+                                <option>Strata 1</option>
+                                <option>Strata 2</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Nama Perguruan Tinggi/Lembaga Pendidikan *</label>
+                            <input class="form-control">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label>Nilai/IPK *</label>
+                                <input class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Lama Pendidikan *</label>
+                                <input class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Keahlian Khusus/Hobi (Jika Ada)</label>
+                            <input class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Penghargaan Terkait Keahlian Khusus (Jika Ada)</label>
+                            <input class="form-control">
+                        </div>
+                    </div>
+
+                    <a onclick="back2()" type="submit" class="btn btnghost mt-3">Kembali</a>
+                    <a onclick="next2()" type="submit" class="btn btndefault mt-3">Selanjutnya</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Pendidikan -->
+
+    <!-- Pengalaman Kerja -->
+    <div class="container main" id="relawan3">
+        <div class="line4">
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 konten">
+                <p class="title text-center"><b>Pengalaman Kerja</b></p>
+                <form>
+                    <div id="pengalamankerja1">
+                        <div class="form-group">
+                            <label>Nama Lembaga Penerima Kerja *</label>
+                            <input class="form-control">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label>Bidang Kerja *</label>
+                                <input class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Lama Kerja *</label>
+                                <input class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Afiliasi/Organisasi Kemanusiaan (Jika Ada) *</label>
+                            <input class="form-control">
+                        </div>
+                        
+                        <a id="tambahpengalamankerja1" onclick="tambahpengalamankerja1()" class="btn btn-block btnghost">+ Tambah Pengalaman Kerja</a>
+                    </div>
+                    
+                    <div id="pengalamankerja2">
+                        <div class="form-group">
+                            <label>Nama Lembaga Penerima Kerja *</label>
+                            <input class="form-control">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label>Bidang Kerja *</label>
+                                <input class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Lama Kerja *</label>
+                                <input class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Afiliasi/Organisasi Kemanusiaan (Jika Ada) *</label>
+                            <input class="form-control">
+                        </div>
+                        
+                        <a id="tambahpengalamankerja2" onclick="tambahpengalamankerja2()" class="btn btn-block btnghost">+ Tambah Pengalaman Kerja</a>
+                    </div>
+                    
+                    <div id="pengalamankerja3">
+                        <div class="form-group">
+                            <label>Nama Lembaga Penerima Kerja *</label>
+                            <input class="form-control">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label>Bidang Kerja *</label>
+                                <input class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Lama Kerja *</label>
+                                <input class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Afiliasi/Organisasi Kemanusiaan (Jika Ada) *</label>
+                            <input class="form-control">
+                        </div>
+                    </div>
+
+                    <a onclick="back3()" type="submit" class="btn btnghost mt-3">Kembali</a>
+                    <a onclick="next3()" type="submit" class="btn btndefault mt-3">Selanjutnya</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Pengalaman Kerja -->
+
+    <!-- Informasi dan Pengetahuan Relawan -->
+    <div class="container main" id="relawan4">
+        <div class="line5">
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 konten">
+                <p class="title text-left"><b>Informasi dan Pengetahuan Relawan</b></p>
+                <form>
+                    <label class="my-3">Riwayat Kesehatan</label>
+                    <div class="form-group">
+                        <label>Riwayat Penyakit Pernafasan *</label>
+                        <input class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Riwayat Penyakit Lainnya (Jika Ada)</label>
+                        <input class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Riwayat Alergi (Jika Ada)</label>
+                        <input class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Apakah Anda Memiliki Keterbatasan Fisik (Disabilitas) ? *</label>
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Iya
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Tidak
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Sebutkan Disabilitas yang Anda Miliki *</label>
+                        <input class="form-control">
+                    </div>
+
+                    <label class="my-3">Kontak Darurat</label>
+                    <div class="form-group">
+                        <label>Nama Kontak *</label>
+                        <input class="form-control">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>Hubungan *</label>
+                            <input class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputState">Tinggal Serumah Dengan Anda? *</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>Iya</option>
+                                <option>Tidak</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Alamat Kontak *</label>
+                        <input class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>No. HP Kontak *</label>
+                        <input class="form-control">
+                    </div>
+
+                    <label class="my-3">Pengetahuan Tentang COVID-19</label>
+                    <div class="form-group">
+                        <label>Apakah dalam dua minggu terakhir anda memiliki salah satu dari gelaja-gejala berikut : (1) Peningkatan suhu tubuh (>37,5), merasakan panas di dada atau punggung; (2) Gangguan pernapasan baru/batuk baru yang terus menerus atau berulangkali *</label>
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Iya
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Tidak
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Apakah pernah kontak erat dengan : 1) Pasien Positif COVID-19; 2) Orang dalam Pemantauan (ODP) / Pasien dalam Pengawasan (PDP) COVID-19 ; 3) Orang dengan demam/gejala gangguan pernapasan yang baru kembali dari luar negeri/area transmisi lokal *</label>
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Pernah
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Tidak Pernah
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Apakah Sebelumnya Pernah Mendapatkan Edukasi/Pelatihan Tentang COVID-19 ? *</label>
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Pernah
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Tidak Pernah
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a onclick="back4()" type="submit" class="btn btnghost mt-3">Kembali</a>
+                    <a onclick="next4()" type="submit" class="btn btndefault mt-3">Selanjutnya</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Informasi dan Pengetahuan Relawan -->
+
+    <!-- Pemilihan Kompetensi Relawan -->
+    <div class="container main" id="relawan5">
+        <div class="line6">
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 konten">
+                <p class="title text-center"><b>Pemilihan Kompetensi Relawan</b></p>
+                <form>
+                    <div class="form-group">
+                        <label for="inputState">Pilihan Kompetensi Relawan</label>
+                        <select id="inputState" class="form-control">
+                            <option selected>Administrasi Umum</option>
+                            <option>Data Entry</option>
+                            <option>Dapur Umum</option>
+                            <option>Information and Teknologi (IT)</option>
+                            <option>Kesehatan Lingkungan</option>
+                            <option>Media Komunikasi (Pengembang Media Komunikasi)</option>
+                            <option>Pergudangan (Logistik)</option>
+                            <option>Pendataan/Assesmnet</option>
+                            <option>Penyuluh Masyarakat</option>
+                            <option>Psikososial</option>
+                            <option>GIS</option>
+                            <option>Supir (Transportasi)</option>
+                            <option>Sanitarian</option>
+                            <option>Tenaga Kebersihan</option>
+                            <option>Lainnya</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Apakah anda pernah bekerja dalam keahlian ini sebelumnya ? *</label>
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Pernah
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Tidak Pernah
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Hal specifik apa yang anda kerjakan pada keahlian ini sebelumnya? *</label>
+                        <input class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Kapan terakhir kali anda bekerja dalam keahlian ini ? *</label>
+                        <input class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Apakah anda memiki penghargaan/sertifikat pada keahlian tersebut ? *</label>
+                        <input class="form-control">
+                    </div>
+
+                    <a onclick="back5()" type="submit" class="btn btnghost mt-3">Kembali</a>
+                    <a onclick="next5()" type="submit" class="btn btndefault mt-3">Selanjutnya</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Pemilihan Kompetensi Relawan -->
+
+    <!-- Footer -->
+    <footer class="text-muted">
+        <div class="container nonhome">
+            <p class="float-right">
+                <a href="mailto:email@bnpb.go.id">email@bnpb.go.id</a>
+            </p>
+            <p>Copyrights © 2020 Badan Nasional Penanggulangan Bencana</p>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <script>
+        document.getElementById('relawan2').style.display = "none";
+        document.getElementById('relawan3').style.display = "none";
+        document.getElementById('relawan4').style.display = "none";
+        document.getElementById('relawan5').style.display = "none";
+        document.getElementById('pendidikan2').style.display = "none";
+        document.getElementById('pengalamankerja2').style.display = "none";
+        document.getElementById('pengalamankerja3').style.display = "none";
+
+        function next1() {
+            document.getElementById('relawan1').style.display = "none";
+            document.getElementById('relawan2').style.display = "block";
+        }
+
+        function next2() {
+            document.getElementById('relawan2').style.display = "none";
+            document.getElementById('relawan3').style.display = "block";
+        }
+
+        function next3() {
+            document.getElementById('relawan3').style.display = "none";
+            document.getElementById('relawan4').style.display = "block";
+        }
+
+        function next4() {
+            document.getElementById('relawan4').style.display = "none";
+            document.getElementById('relawan5').style.display = "block";
+        }
+
+        function back2() {
+            document.getElementById('relawan2').style.display = "none";
+            document.getElementById('relawan1').style.display = "block";
+        }
+
+        function back3() {
+            document.getElementById('relawan3').style.display = "none";
+            document.getElementById('relawan2').style.display = "block";
+        }
+
+        function back4() {
+            document.getElementById('relawan4').style.display = "none";
+            document.getElementById('relawan3').style.display = "block";
+        }
+
+        function back5() {
+            document.getElementById('relawan5').style.display = "none";
+            document.getElementById('relawan4').style.display = "block";
+        }
+
+        function tambahpendidikan() {
+            document.getElementById('tambahpendidikan').style.display = "none";
+            document.getElementById('pendidikan2').style.display = "block";
+        }
+        
+        function tambahpengalamankerja1() {
+            document.getElementById('tambahpengalamankerja1').style.display = "none";
+            document.getElementById('pengalamankerja2').style.display = "block";
+        }
+        
+        function tambahpengalamankerja2() {
+            document.getElementById('tambahpengalamankerja2').style.display = "none";
+            document.getElementById('pengalamankerja3').style.display = "block";
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Masuk - Badan Nasional Penanggulangan Bencana</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo-square.svg">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light nav1">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/logo-square.svg" class="img-fluid" alt="Responsive image"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Alur Pendaftaran</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Modul Training</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tanya Jawab</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Bantuan</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <button class="btn masuk btndefault " type="submit">Masuk</button>&nbsp;&nbsp;
+                    <button class="btn daftar btnghost" type="submit">Daftar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Header -->
+    <div class="container-fluid header-login">
+        <div class="container login p-4">
+            <p class="judul text-center">Masuk</p>
+            <div class="row text-center">
+                <div class="col-6">
+                    <a id="relawan" href="#" class="active pr-3 pl-3 pb-2" onclick="relawan()">Relawan</a>
+                </div>
+                <div class="col-6">
+                    <a id="institusi" href="#" class="pr-3 pl-3 pb-2" onclick="institusi()">Institusi</a>
+                </div>
+            </div>
+
+            <form id="relawan1" class="mt-4 mb-4">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+            </form>
+
+            <div id="relawan2" class="row">
+                <div class="col-6">
+                    <button class="btn btnghost">Daftar Relawan</button>
+                </div>
+                <div class="col-6 text-right">
+                    <button class="btn btndefault">Masuk</button>
+                </div>
+            </div>
+            
+            <form id="institusi1" class="mt-4 mb-4">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+            </form>
+
+            <div id="institusi2" class="row">
+                <div class="col-6">
+                    <button class="btn btnghost">Daftar Instansi</button>
+                </div>
+                <div class="col-6 text-right">
+                    <button class="btn btndefault">Masuk</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header -->
+
+    <!-- Footer -->
+    <footer class="text-muted mt-3">
+        <div class="container">
+            <p class="float-right">
+                <a href="mailto:email@bnpb.go.id">email@bnpb.go.id</a>
+            </p>
+            <p>Copyrights © 2020 Badan Nasional Penanggulangan Bencana</p>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <script>
+        document.getElementById('institusi1').style.display = "none";
+        document.getElementById('institusi2').style.display = "none";
+
+        function relawan() {
+            var INSTITUSI = document.getElementById("institusi")
+            INSTITUSI.className = "pr-3 pl-3 pb-2";
+            var RELAWAN = document.getElementById("relawan")
+            RELAWAN.className = "active pr-3 pl-3 pb-2";
+            
+            document.getElementById('institusi1').style.display = "none";
+            document.getElementById('institusi2').style.display = "none";
+
+            document.getElementById('relawan1').style.display = "block";
+            document.getElementById('relawan2').style.display = "flex";
+        }
+
+        function institusi() {
+            var INSTITUSI = document.getElementById("institusi")
+            INSTITUSI.className = "active pr-3 pl-3 pb-2";
+            var RELAWAN = document.getElementById("relawan")
+            RELAWAN.className = "pr-3 pl-3 pb-2";
+
+            document.getElementById('relawan1').style.display = "none";
+            document.getElementById('relawan2').style.display = "none";
+
+            document.getElementById('institusi1').style.display = "block";
+            document.getElementById('institusi2').style.display = "flex";
+        }
+
+    </script>
+
+</body>
+
+</html>
